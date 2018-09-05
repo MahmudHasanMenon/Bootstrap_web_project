@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap-social.css">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     <!-- endbuild -->
     <title>Ristorante Con Fusion</title>
 </head>
@@ -26,7 +26,7 @@
     <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="41"></a>
 		    <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
-                     <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                     <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home </a></li>
                     <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
@@ -34,8 +34,7 @@
 				
 				
 				<span class="navbar-text">
-                                       <a data-toggle="modal" data-target="#loginModal">
-                                                   <span class="fa fa-sign-in"></span>Login</a>
+                                       <a id="login-button"><span class="fa fa-sign-in fa-lg"></span> Login</a>
                                        </span>
 				
 		
@@ -45,11 +44,11 @@
         </div>
     </nav>
 	 <div id="loginModal" class="modal fade" role="dialog">
-        <div class="modal-dialog" role="content">
+        <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Login</h4>
-                    <button type="button" class="close" data-dismiss="modal">
+                    <button type="button" class="close" data-dismiss="modal"id="r-close">
                         &times;
                     </button>
                 </div>
@@ -92,7 +91,7 @@
                                                  <div class="modal-content">
                                                  <div class="modal-header">
                                                   <h4 class="modal-title">Reserve a Table </h4>
-                                                  <button type="button" class="close" data-dismiss="modal">&times;
+                                                  <button type="button" class="close" data-dismiss="modal"id="r-close">&times;
                                                                              </button>
                                                            </div>
 
@@ -195,9 +194,8 @@
                 </div>
                 </div>
 				  <div class="col-12 col-sm-3 align-self-center">
-                     <a type="button" class="btn btn-warning btn-sm btn-block" data-toggle="modal" data-target="#reservemodal"
-                                            href=""><strong>Reserve Table</strong>
-																	   </a>
+				  <button type="button"id="mybtn" class="btn btn-warning btn-sm btn-block"><strong>Reserve Table</strong>
+                      
                 </div>
             </div>
         </div>

@@ -15,4 +15,15 @@ $("#carousel-button").children("span").removeClass('fa-play');
 $("#carousel-button").children("span").addClass('fa-pause');
 }
 });
+
+
+$("#login-button").click(function() 	{ $("#loginModal").modal('toggle'); });
+	$("#mybtn").click(function() 	{ $("#reservemodal").modal('toggle'); });
+
+
+
                                                         });
+														
+			 			
+													
+  
